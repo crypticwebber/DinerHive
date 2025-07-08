@@ -12,7 +12,7 @@
 <body>
 
     <!-- navbar -->
-    <div class="flex flex-col bg-white shadow-lg sticky px-8 py-4">
+    <div class="flex flex-col bg-white shadow-lg sticky z-50 top-0 px-8 py-4">
         <div class="flex items-center justify-between  ">
             <div class="flex-shrink-0">
                 <img src="assets/img/DH CONSULTS.png" class="w-30" alt="">
@@ -20,7 +20,6 @@
             <div class="hidden lg:flex">
                 <ul class="flex gap-8 text-sm">
                     <li><a href="" class="hover:text-emerald-700">Home</a></li>
-                    <li><a href="" class="hover:text-emerald-700">About Us</a></li>
                     <li class="relative group">
                         <a href="" class="hover:text-emerald-700 flex items-center">
                             Product & Services
@@ -33,14 +32,15 @@
                         <div
                             class="absolute left-0 hidden group-hover:block hover:block bg-white shadow-md rounded-md mt-0 py-1 min-w-[400px]  z-50 border border-gray-100">
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Savings Accounts</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Loan Products</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Loan Services</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Solar Solutions</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Electronics</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Buy Now Pay Later</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business Registration</a>
                         </div>
                     </li>
-                    <li><a href="" class="hover:text-emerald-700">How it works</a></li>
+                    <!-- <li><a href="" class="hover:text-emerald-700">How it works</a></li> -->
+                    <li><a href="" class="hover:text-emerald-700">About Us</a></li>
                     <li><a href="" class="hover:text-emerald-700">Contact</a></li>
                 </ul>
             </div>
@@ -63,7 +63,6 @@
             <div class="">
                 <ul class="flex flex-col gap-2">
                     <li><a href="" class="hover:text-emerald-700">Home</a></li>
-                    <li><a href="" class="hover:text-emerald-700">About Us</a></li>
                     <li class="relative group">
                         <a href="" class="hover:text-emerald-700 touch:text-emerald-500 flex items-center">
                             Product & Services
@@ -76,14 +75,15 @@
                         <div
                             class="absolute left-0 hidden group-hover:block hover:block group-[.active]:block bg-white shadow-md rounded-md mt-0 py-1 min-w-[200px]  z-50 border border-gray-100">
                             <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Savings Accounts</a>
-                            <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Loan Products</a>
+                            <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Loan Services</a>
                             <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Solar Solutions</a>
                             <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Electronics</a>
                             <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Buy Now Pay Later</a>
                             <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Business Registration</a>
                         </div>
                     </li>
-                    <li><a href="" class="hover:text-emerald-700">How it works</a></li>
+                    <!-- <li><a href="" class="hover:text-emerald-700">How it works</a></li> -->
+                    <li><a href="" class="hover:text-emerald-700">About Us</a></li>
                     <li><a href="" class="hover:text-emerald-700">Contact</a></li>
                 </ul>
             </div>
@@ -110,31 +110,132 @@
         <div class="flex flex-col gap-2 md:flex-row  justify-center mt-10 md:gap-8">
             <button
                 class="bg-gradient-to-l from-amber-400 to-amber-500 px-10 py-2 rounded-lg text-lg text-white hover:scale-105 ">Explore</button>
-            <button class="bg-gradient-to-l from-amber-400 to-amber-500 px-10 py-2 rounded-lg text-lg text-white hover:scale-105 ">Apply
+            <button
+                class="bg-gradient-to-l from-amber-400 to-amber-500 px-10 py-2 rounded-lg text-lg text-white hover:scale-105 ">Apply
                 now</button>
         </div>
 
     </div>
 
-    <div class="grid md:grid-cols-2 bg-gray-100 rounded-md mt-20">
-        <div class="bg-white/50 m-10 rounded-md p-10">
-            <h1 class="font-medium text-2xl">ABOUT US</h1>
-            <p>Dinerhive began as a community-focused savings cooperative. Today, we've grown into a full-service
-                financial institution serving over 200,000 customers across Nigeria. Our evolution from a modest savings
-                platform to offering loans, solar financing, and retail solutions reflects our commitment to solving
-                real financial challenges with innovative products.
-                <br>
-                <br>
-                At Dinerhive, we bridge traditional financial security with modern convenience. 
-                Our unique integration of solar financing with savings programs – where customers can allocate savings
-                toward renewable energy investments – has empowered over 15,000 households to reduce energy costs by 40%
-                while building financial assets.
-            </p>
+    <!-- let's make it easier -->
+    <div class="grid md:grid-cols-2 lg:p-20 md:p-10 p-4">
+        <div class="lg:px-8 lg:py-10 py-4 px-2">
+            <h1 class="text-2xl font-medium text-gray-700">Let's make it easier for you</h1>
+            <p class="text-lg mt-4">Find what you are looking for quicker by telling us what you do or who you are.</p>
+            <div class="  mt-4">
+                <!-- <label for="basic-select" class="block text-sm font-medium text-gray-700 mb-1">Choose an option</label> -->
+                <select id="basic-select"
+                    class="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:border-emerald-300">
+                    <option selected disabled>Select...</option>
+                    <option value="">Business</option>
+                    <option value="">Individual</option>
+                    <option value="">Enterprenuer</option>
+                    <option value="">Investor</option>
+                    <option value="">Student</option>
+                </select>
+            </div>
+            <button
+                class="bg-gradient-to-l from-amber-400 to-amber-500 w-full mt-4 rounded-lg py-2 cursor-pointer  text-white  "><a
+                    href="">Get Started</a></button>
         </div>
-        <div>
-            <img src="assets/img/pngwing.com (2).png" alt="">
+        <div class="">
+            <img src="assets/img/team-diverse-colleagues-their-way-office.jpg " class="md:rounded-[14px]" alt="">
         </div>
     </div>
+
+    <!-- why choose dh -->
+    <div class="relative items-center ">
+        <img src="assets/img/76821.jpg" class="h-75 object-cover w-full " alt="">
+        <div class="absolute top-0 start-0 bg-gradient-to-l from-emerald-200/50 to-sky-100/50 w-full h-75 "></div>
+        <div class="absolute top-0 start-0 md:p-15 lg:p-20 p-10 ">
+            <h1 class="font-bold md:text-4xl text-2xl">Why Choose DinerHive Financial Limited</h1>
+            <p class="md:text-2xl mt-4">We don't just help you reach financial milestones, we build lasting
+                relationships.</p>
+            <div class="mt-4 flex flex-col md:flex-row md:gap-4 gap-2 ">
+                <button
+                    class="bg-gradient-to-l from-emerald-300 to-sky-200 rounded-md px-15 py-2 cursor-pointer hover:scale-105">Find
+                    out why</button>
+                <button
+                    class="bg-gradient-to-l from-emerald-300 to-sky-200 rounded-md px-15 py-2 cursor-pointer hover:scale-105">Register
+                    now</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- dhataglance -->
+    <div>
+        <h1 class="text-center mt-12 font-bold md:text-4xl text-2xl">DinerHive at a <span
+                class="text-amber-400">Glance</span></h1>
+    </div>
+    <div class="grid md:grid-cols-3 flex gap-4 md:p-10 mt-4 ">
+        <div class="bg-gray-100">
+            <img src="https://image.shutterstock.com/image-illustration/solar-panels-dim-light-3d-260nw-1195906378.jpg"
+                class="w-full h-50 object-cover" alt="">
+            <div class="p-8">
+                <h1 class="font-medium text-2xl">Solar Solutions</h1>
+                <p class="mt-2">Switch to solar with no upfront cost! Pay monthly for reliable solar systems that cut
+                    your energy
+                    bills
+                    by 60%, backed by warranties and expert support.</p>
+                <button
+                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-8 py-2 mt-4 cursor-pointer">Read
+                    More</button>
+            </div>
+        </div>
+        <div class="bg-gray-100">
+            <img src="https://image.shutterstock.com/image-photo/coins-laid-out-graphbusiness-success-260nw-2171251779.jpg"
+                class="w-full h-50 object-cover" alt="">
+            <div class="p-8">
+                <h1 class="font-medium text-2xl">Loan Services</h1>
+                <p class="mt-2">Need cash fast? Our hassle-free loans hit your account within 24 hours. Flexible
+                    repayments, fair rates, and zero paperwork. Solve financial gaps today—apply in minutes</p>
+                <button
+                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-8 py-2 mt-4 cursor-pointer">Read
+                    More</button>
+            </div>
+        </div>
+        <div class="bg-gray-100">
+            <img src="https://media.istockphoto.com/id/1454168183/photo/saving-investment-banking-finance-concept-stack-of-coins-with-piggy-bank-on-the-table-growth.jpg?b=1&s=612x612&w=0&k=20&c=uYQNtYkb4eHu66qIhT_KyZOXUwclODGnhrreMinCPdw="
+                class="w-full h-50 object-cover" alt="">
+            <div class="p-8">
+                <h1 class="font-medium text-2xl">Savings Account</h1>
+                <p class="mt-2">Grow your money safely with Dinerhive’s high-yield savings accounts. Earn up to 10%
+                    annual interest with zero fees, and withdraw anytime—no penalties, no stress. </p>
+                <button
+                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-8 py-2 mt-4 cursor-pointer">Read
+                    More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 md:p-10 mt-8 md:mt-0">
+        <div class="relative">
+            <img src="assets/img/cheerful-employee-with-papers.jpg" class="object-cover h-full" alt="">
+            <div class="absolute top-0 start-0 bg-gray-950/60 w-full h-full"></div>
+            <div class="absolute top-0 start-0 lg:p-15 md:p-10 p-4 ">
+                <h1 class="font-bold md:text-2xl text-xl text-white">Business Registration</h1>
+                <p class="text-white md:text-lg md:mt-4 mt-2">Launch your business the right way—fast and hassle-free.
+                    Dinerhive handles your CAC registration, tax
+                    IDs, and legal compliance in just 7 days. Affordable packages start at ₦38,000, so you can focus on
+                    growth, not paperwork.</p>
+                <button
+                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-8 py-2 md:mt-8 mt-4 cursor-pointer">Read
+                    More</button>
+            </div>
+        </div>
+        <div class="place-items-center mt-4 ">
+            <h1 class="font-medium text-gray-600 text-3xl">Take the bold step</h1>
+            <p class="text-lg text-gray-400">Go legal today!</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Wz304CLZBxMU-px_7S9hsyejME0Oioz3ZA&s"
+                class="w-80 mt-4" alt="">
+        </div>
+    </div>
+
+
+
+
 
 
 
