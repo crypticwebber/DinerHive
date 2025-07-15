@@ -7,12 +7,13 @@
     <title>DinerHive</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body>
 
     <!-- navbar -->
-    <div class="flex flex-col bg-white shadow-lg sticky z-50 top-0 px-8 py-4">
+    <div class="flex flex-col bg-white top-0 px-8 py-4">
         <div class="flex items-center justify-between  ">
             <div class="flex-shrink-0">
                 <img src="assets/img/DH CONSULTS.png" class="w-30" alt="">
@@ -100,11 +101,11 @@
     </div>
 
     <!-- herosection -->
-    <div class="text-center lg:px-50 p-8 lg:mt-20 md:mt-10 md:px-30">
-        <h1 class="md:text-[50px]/12 text-[30px]/9 font-bold ">Fuel Your Business Growth with Tailored Financial
+    <div class="text-center lg:px-60 p-8 md:mt-10 md:px-30" data-aos="zoom-in-down" data-aos-duration="1500">
+        <h1 class="lg:text-[50px]/14 md:text-[40px]/12 text-[30px]/9 font-bold">Fuel Your Business Growth with Tailored Financial
             Solutions</h1>
-        <P class="mt-8 text-sm md:text-normal">Dinerhive Financial Limited empowers individuals and businesses with
-            flexible savings plans,
+        <P class="mt-8 text-sm lg:text-lg md:text-normal">Dinerhive Financial Limited empowers individuals and businesses with
+            flexible savings plans
             instant loans,
             affordable solar solutions, and smart shopping options – all designed to help you thrive."</P>
         <div class="flex flex-col gap-2 md:flex-row  justify-center mt-10 md:gap-8">
@@ -115,123 +116,274 @@
                 now</button>
         </div>
 
+        <div class="">
+            <img src="assets/img/DH CONSULTS2.png" alt="" class="">
+        </div>
     </div>
+
+
 
     <!-- let's make it easier -->
-    <div class="grid md:grid-cols-2 lg:p-20 md:p-10 p-4">
-        <div class="lg:px-8 lg:py-10 py-4 px-2">
-            <h1 class="text-2xl font-medium text-gray-700">Let's make it easier for you</h1>
-            <p class="text-lg mt-4">Find what you are looking for quicker by telling us what you do or who you are.</p>
-            <div class="  mt-4">
-                <!-- <label for="basic-select" class="block text-sm font-medium text-gray-700 mb-1">Choose an option</label> -->
-                <select id="basic-select"
-                    class="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:border-emerald-300">
-                    <option selected disabled>Select...</option>
-                    <option value="">Business</option>
-                    <option value="">Individual</option>
-                    <option value="">Enterprenuer</option>
-                    <option value="">Investor</option>
-                    <option value="">Student</option>
-                </select>
+    <div class="bg-teal-900 md:rounded-t-[20px]">
+        <div class="grid md:grid-cols-2 lg:px-20 md:p-10 p-4" data-aos="fade-right" data-aos-duration="1500">
+            <div class="lg:px-8 lg:py-10 py-4 px-2">
+                <h1 class="text-2xl font-medium text-white">Let's make it easier for you</h1>
+                <p class="text-lg mt-4 text-white">Find what you are looking for quicker by telling us what you do or
+                    who you are.</p>
+                <div class="  mt-4">
+                    <!-- <label for="basic-select" class="block text-sm font-medium text-gray-700 mb-1">Choose an option</label> -->
+                    <select id="basic-select"
+                        class="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:border-emerald-300">
+                        <option selected disabled>Select...</option>
+                        <option value="">Business</option>
+                        <option value="">Individual</option>
+                        <option value="">Enterprenuer</option>
+                        <option value="">Investor</option>
+                        <option value="">Student</option>
+                    </select>
+                </div>
+                <button
+                    class="bg-gradient-to-l from-amber-400 to-amber-500 w-full mt-4 rounded-lg py-2 cursor-pointer  text-white  "><a
+                        href="">Get Started</a></button>
             </div>
-            <button
-                class="bg-gradient-to-l from-amber-400 to-amber-500 w-full mt-4 rounded-lg py-2 cursor-pointer  text-white  "><a
-                    href="">Get Started</a></button>
-        </div>
-        <div class="">
-            <img src="assets/img/team-diverse-colleagues-their-way-office.jpg " class="md:rounded-[14px]" alt="">
-        </div>
-    </div>
-
-    <!-- why choose dh -->
-    <div class="relative items-center ">
-        <img src="assets/img/76821.jpg" class="h-75 object-cover w-full " alt="">
-        <div class="absolute top-0 start-0 bg-gradient-to-l from-emerald-200/50 to-sky-100/50 w-full h-75 "></div>
-        <div class="absolute top-0 start-0 md:p-15 lg:p-20 p-10 ">
-            <h1 class="font-bold md:text-4xl text-2xl">Why Choose DinerHive Financial Limited</h1>
-            <p class="md:text-2xl mt-4">We don't just help you reach financial milestones, we build lasting
-                relationships.</p>
-            <div class="mt-4 flex flex-col md:flex-row md:gap-4 gap-2 ">
-                <button
-                    class="bg-gradient-to-l from-emerald-300 to-sky-200 rounded-md px-15 py-2 cursor-pointer hover:scale-105">Find
-                    out why</button>
-                <button
-                    class="bg-gradient-to-l from-emerald-300 to-sky-200 rounded-md px-15 py-2 cursor-pointer hover:scale-105">Register
-                    now</button>
+            <div class="">
+                <img src="assets/img/team-diverse-colleagues-their-way-office.jpg " class="rounded-[14px]" alt="">
             </div>
         </div>
     </div>
 
 
+    <!-- Why choose dinerhive -->
+    <div class="bg-blue-50 rounded-xl p-8" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-center mb-2">Why <span class="text-teal-600">Dinerhive?</span></h2>
+        <p class="text-center text-gray-600 mb-8">We combine innovation with reliability</p>
 
-    <!-- dhataglance -->
-    <div>
-        <h1 class="text-center mt-12 font-bold md:text-4xl text-2xl">DinerHive at a <span
-                class="text-amber-400">Glance</span></h1>
-    </div>
-    <div class="grid md:grid-cols-3 flex gap-4 md:p-10 mt-4 ">
-        <div class="bg-gray-100">
-            <img src="https://image.shutterstock.com/image-illustration/solar-panels-dim-light-3d-260nw-1195906378.jpg"
-                class="w-full h-50 object-cover" alt="">
-            <div class="p-8">
-                <h1 class="font-medium text-2xl">Solar Solutions</h1>
-                <p class="mt-2">Switch to solar with no upfront cost! Pay monthly for reliable solar systems that cut
-                    your energy
-                    bills
-                    by 60%, backed by warranties and expert support.</p>
-                <button
-                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-8 py-2 mt-4 cursor-pointer">Read
-                    More</button>
+        <div class="grid md:grid-cols-3 gap-6 md:px-10">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg hover:scale-105">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-bolt text-teal-600"></i>
+                </div>
+                <h3 class="font-bold mb-2">Fast & Digital</h3>
+                <p class="text-gray-600">90% of services completed online in under 10 minutes</p>
             </div>
-        </div>
-        <div class="bg-gray-100">
-            <img src="https://image.shutterstock.com/image-photo/coins-laid-out-graphbusiness-success-260nw-2171251779.jpg"
-                class="w-full h-50 object-cover" alt="">
-            <div class="p-8">
-                <h1 class="font-medium text-2xl">Loan Services</h1>
-                <p class="mt-2">Need cash fast? Our hassle-free loans hit your account within 24 hours. Flexible
-                    repayments, fair rates, and zero paperwork. Solve financial gaps today—apply in minutes</p>
-                <button
-                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-8 py-2 mt-4 cursor-pointer">Read
-                    More</button>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg hover:scale-105">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <i class="fa fa-lock text-teal-600"></i>
+                </div>
+                <h3 class="font-bold mb-2">Your Money is Safe</h3>
+                <p class="text-gray-600">CBN-regulated with NDIC insurance coverage</p>
             </div>
-        </div>
-        <div class="bg-gray-100">
-            <img src="https://media.istockphoto.com/id/1454168183/photo/saving-investment-banking-finance-concept-stack-of-coins-with-piggy-bank-on-the-table-growth.jpg?b=1&s=612x612&w=0&k=20&c=uYQNtYkb4eHu66qIhT_KyZOXUwclODGnhrreMinCPdw="
-                class="w-full h-50 object-cover" alt="">
-            <div class="p-8">
-                <h1 class="font-medium text-2xl">Savings Account</h1>
-                <p class="mt-2">Grow your money safely with Dinerhive’s high-yield savings accounts. Earn up to 10%
-                    annual interest with zero fees, and withdraw anytime—no penalties, no stress. </p>
-                <button
-                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-8 py-2 mt-4 cursor-pointer">Read
-                    More</button>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg hover:scale-105">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-arrows-rotate text-teal-600"></i>
+                </div>
+                <h3 class="font-bold mb-2">Flexible Options</h3>
+                <p class="text-gray-600">Customizable repayment plans for every budget</p>
             </div>
         </div>
     </div>
 
-    <div class="grid md:grid-cols-2 md:p-10 mt-8 md:mt-0">
-        <div class="relative">
-            <img src="assets/img/cheerful-employee-with-papers.jpg" class="object-cover h-full" alt="">
-            <div class="absolute top-0 start-0 bg-gray-950/60 w-full h-full"></div>
-            <div class="absolute top-0 start-0 lg:p-15 md:p-10 p-4 ">
-                <h1 class="font-bold md:text-2xl text-xl text-white">Business Registration</h1>
-                <p class="text-white md:text-lg md:mt-4 mt-2">Launch your business the right way—fast and hassle-free.
-                    Dinerhive handles your CAC registration, tax
-                    IDs, and legal compliance in just 7 days. Affordable packages start at ₦38,000, so you can focus on
-                    growth, not paperwork.</p>
-                <button
-                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-8 py-2 md:mt-8 mt-4 cursor-pointer">Read
-                    More</button>
+    <!-- product_services -->
+    <div class=" p-10">
+        <h2 class="md:text-3xl text-2xl font-bold text-center mt-10">Product & Services That <br> <Span
+                class="text-teal-600"> Fits
+                Your
+                Needs</Span></h2>
+        <div class="grid md:grid-cols-3 lg:px-20 gap-6 mt-10" data-aos="fade-right">
+            <!-- card 1 -->
+            <div class="rounded-lg overflow-hidden bg-blue-50 hover:scale-105 hover:shadow-lg shadow-blue-50">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/black-businessman-happy-expression_1194-2774.jpg"
+                        class="w-full h-48 object-cover" alt="">
+                    <div class="absolute -bottom-6 left-4">
+                        <div
+                            class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center shadow-md border-4 border-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 pb-4 px-4">
+                    <h2 class="text-xl font-bold">Savings Account</h2>
+                    <p class="mt-2 text-gray-600">Start saving with competitive interest rates</p>
+                    <button
+                        class="mt-4 bg-white text-teal-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="rounded-lg overflow-hidden bg-blue-50 hover:scale-105 hover:shadow-lg shadow-blue-50">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/loan-approved-application-form-concept_53876-127383.jpg?t=st=1752582417~exp=1752586017~hmac=df45e5bf3cb42c26fc4dc705cf738046cd4182f6c6b49f54f7e8a001171cfb6d&w=826"
+                        class="w-full h-48 object-cover" alt="">
+                    <div class="absolute -bottom-6 left-4">
+                        <div
+                            class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center shadow-md border-4 border-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path d="M12 2v4m0 12v2m8-8h-4m-12 0H4m14.3-6.3l-2.8 2.8M5.7 5.7l2.8 2.8" />
+                                <path d="M8 12a4 4 0 108 0 4 4 0 00-8 0z" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 pb-4 px-4">
+                    <h2 class="text-xl font-bold">Loan Services</h2>
+                    <p class="mt-2 text-gray-600">Flexible Loans for Every Need</p>
+                    <button
+                        class="mt-4 bg-white text-teal-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="rounded-lg overflow-hidden bg-blue-50 hover:scale-105 hover:shadow-lg shadow-blue-50">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/african-american-technician-checks-maintenance-solar-panels-group-three-black-engineers-meeting-solar-station_627829-4799.jpg?t=st=1752582747~exp=1752586347~hmac=896e9a387151eadbb5507fc02f98418bf702e08b09952115257e8c8655e5f550&w=826"
+                        class="w-full h-48 object-cover" alt="">
+                    <div class="absolute -bottom-6 left-4">
+                        <div
+                            class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center shadow-md border-4 border-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="5" width="18" height="14" rx="1" />
+                                <line x1="12" y1="5" x2="12" y2="19" />
+                                <line x1="7" y1="12" x2="17" y2="12" />
+                                <line x1="5" y1="9" x2="7" y2="9" />
+                                <line x1="5" y1="15" x2="7" y2="15" />
+                                <line x1="17" y1="9" x2="19" y2="9" />
+                                <line x1="17" y1="15" x2="19" y2="15" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 pb-4 px-4">
+                    <h2 class="text-xl font-bold">Solar Products</h2>
+                    <p class="mt-2 text-gray-600">Affordable Solar Energy Solutions</p>
+                    <button
+                        class="mt-4 bg-white text-teal-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="place-items-center mt-4 ">
-            <h1 class="font-medium text-gray-600 text-3xl">Take the bold step</h1>
-            <p class="text-lg text-gray-400">Go legal today!</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Wz304CLZBxMU-px_7S9hsyejME0Oioz3ZA&s"
-                class="w-80 mt-4" alt="">
+
+        <!-- second-row -->
+        <div class="grid md:grid-cols-3 lg:px-20 gap-6 mt-10" data-aos="fade-left">
+            <!-- card 1 -->
+            <div class="rounded-lg overflow-hidden bg-blue-50 hover:scale-105 hover:shadow-lg shadow-blue-50">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/electric-blender-mixer-juicer-set_140725-7263.jpg?t=st=1752583199~exp=1752586799~hmac=041de0d0c2472016518180c1b9f8ab178ce018d202775534ccd78c20c8ad56e9&w=826"
+                        class="w-full h-48 object-cover" alt="">
+                    <div class="absolute -bottom-6 left-4">
+                        <div
+                            class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center shadow-md border-4 border-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="2" width="16" height="20" rx="2" />
+                                <path d="M12 18h.01" />
+                                <path d="M8 6h8v4H8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 pb-4 px-4">
+                    <h2 class="text-xl font-bold">Electronics</h2>
+                    <p class="mt-2 text-gray-600">Latest electronics, Flexible Payments</p>
+                    <button
+                        class="mt-4 bg-white text-teal-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="rounded-lg overflow-hidden bg-blue-50 hover:scale-105 hover:shadow-lg shadow-blue-50">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/young-woman-shopping-clothes_23-2149187306.jpg?t=st=1752583876~exp=1752587476~hmac=517e32639499cde28844f44ae5a90c01baba22633399834fddc6e76ada354495&w=826"
+                        class="w-full h-48 object-cover" alt="">
+                    <div class="absolute -bottom-6 left-4">
+                        <div
+                            class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center shadow-md border-4 border-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M2 10h20" />
+                                <path d="M6 14h.01" />
+                                <path d="M10 14h.01" />
+                                <path d="M14 14h.01" />
+                                <circle cx="18" cy="14" r="1" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 pb-4 px-4">
+                    <h2 class="text-xl font-bold">Buy Now, Pay Later (BNPL)</h2>
+                    <p class="mt-2 text-gray-600">Shop Now, Pay Later</p>
+                    <button
+                        class="mt-4 bg-white text-teal-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="rounded-lg overflow-hidden bg-blue-50 hover:scale-105 hover:shadow-lg shadow-blue-50">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/professional-businessman-working-with-documents-his-modern-office_58466-14612.jpg?t=st=1752584035~exp=1752587635~hmac=bf3d9fdc7698e2e80743755bc635c13bb3ea787b1f76fc86d72b5e09eacaf2ee&w=826"
+                        class="w-full h-48 object-cover" alt="">
+                    <div class="absolute -bottom-6 left-4">
+                        <div
+                            class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center shadow-md border-4 border-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                <circle cx="12" cy="14" r="3" />
+                                <path d="M12 10v1m0 6v1m4-4h-1m-6 0H8" />
+                                <path d="M14 2v6h6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 pb-4 px-4">
+                    <h2 class="text-xl font-bold">Business Registration</h2>
+                    <p class="mt-2 text-gray-600">Start Your Business the Right Way</p>
+                    <button
+                        class="mt-4 bg-white text-teal-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -281,6 +433,20 @@
                     });
                 }
             });
+        });
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
         });
     </script>
 </body>
