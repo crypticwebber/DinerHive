@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinerHive</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="flex flex-col bg-blue-50 top-0 px-8 py-4">
+        <div class="flex items-center justify-between  ">
+            <div class="flex-shrink-0">
+                <img src="assets/img/DH CONSULTS.png" class="w-30" alt="">
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="flex gap-8 text-sm">
+                    <li><a href="index.html" class="hover:text-emerald-700">Home</a></li>
+                    <li class="relative group">
+                        <a href="" class="hover:text-emerald-700 flex items-center">
+                            Product & Services
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute left-0 hidden group-hover:block hover:block bg-white shadow-md rounded-md mt-0 py-1 min-w-[400px]  z-50 border border-gray-100">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Savings Accounts</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Loan Services</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Solar Solutions</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Electronics</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Buy Now Pay Later</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business Registration</a>
+                        </div>
+                    </li>
+                    <!-- <li><a href="" class="hover:text-emerald-700">How it works</a></li> -->
+                    <li><a href="" class="hover:text-emerald-700">About Us</a></li>
+                    <li><a href="" class="hover:text-emerald-700">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-4 hidden lg:flex">
+                <button
+                    class="bg-blue-50 border border-emerald-300 px-8 py-2 rounded-lg hover:border-emerald-700 hover:scale-105 "><a
+                        href="">Sign in</a></button>
+                <button
+                    class="bg-gradient-to-l from-emerald-300 to-sky-300 rounded-lg px-8 py-2 hover:bg-gradient-to-l hover:from-emerald-400 hover:to-sky-400 hover:scale-105 "><a
+                        href="">Sign
+                        up</a></button>
+            </div>
+
+            <!-- mobile icon -->
+            <div class="lg:hidden" id="mobile-menu-button">
+                <i class="fa fa-bars text-emerald-400 text-[24px] cursor-pointer"></i>
+            </div>
+        </div>
+        <div class="hidden lg:hidden mt-8 pb-4" id="mobile-menu">
+            <div class="">
+                <ul class="flex flex-col gap-2">
+                    <li><a href="index.html" class="hover:text-emerald-700">Home</a></li>
+                    <li class="relative group">
+                        <a href="" class="hover:text-emerald-700 touch:text-emerald-500 flex items-center">
+                            Product & Services
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180 active-rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute left-0 hidden group-hover:block hover:block group-[.active]:block bg-white shadow-md rounded-md mt-0 py-1 min-w-[200px]  z-50 border border-gray-100">
+                            <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Savings Accounts</a>
+                            <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Loan Services</a>
+                            <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Solar Solutions</a>
+                            <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Electronics</a>
+                            <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Buy Now Pay Later</a>
+                            <a href="#" class="block px-4 py-0 mb-2 hover:bg-gray-100">Business Registration</a>
+                        </div>
+                    </li>
+                    <!-- <li><a href="" class="hover:text-emerald-700">How it works</a></li> -->
+                    <li><a href="" class="hover:text-emerald-700">About Us</a></li>
+                    <li><a href="" class="hover:text-emerald-700">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col mt-4 ">
+                <button
+                    class="bg-blue-50 border border-emerald-300 px-8 py-2 mb-2 rounded-lg hover:border-emerald-700 hover:scale-105 "><a
+                        href="">Sign in</a></button>
+                <button
+                    class="bg-gradient-to-l from-emerald-300 to-sky-300 rounded-lg px-8 py-2 hover:bg-gradient-to-l hover:from-emerald-400 hover:to-sky-400 hover:scale-105 "><a
+                        href="">Sign
+                        up</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- unlock -->
+    <div class="grid md:grid-cols-2 bg-blue-50 lg:p-20 md:p-10 gap-10 -mt-1 md:mt-0">
+        <div class="flex flex-col justify-center px-8 mt-8 md:mt-0 md:p-0" data-aos="zoom-in">
+            <h1 class="font-bold lg:text-[50px]/12 text-3xl ">Unlock Financial Freedom with Smart Savings</h1>
+            <p class="lg:text-lg text-sm mt-4 text-gray-700">Maximize your savings with an account that combines
+                security, flexibility, and attractive returns.</p>
+            <button
+                class="bg-sky-500 lg:p-3 md:p-2 p-3 rounded-lg w-50 lg:mt-8 md:mt-4 mt-8 text-lg hover:scale-105 hover:bg-sky-600 text-white">Get
+                Started <i class="fa fa-arrow-right mx-4"></i></button>
+        </div>
+        <div data-aos="zoom-in">
+            <img src="https://media.istockphoto.com/id/1481883449/photo/safe-box-on-blue-background.jpg?b=1&s=612x612&w=0&k=20&c=Ti9V6bUVFUWFnephu2PhvSh6T-aCm70f0pziZmOJnLs="
+                class="md:rounded-[30px] " alt="">
+        </div>
+    </div>
+
+
+
+    <!-- benefits -->
+    <div class="p-14 mt-12 font-medium text-3xl text-sky-900">Savings Account Benefits</div>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 md:p-14 p-8 lg:gap-8 gap-14" data-aos="fade-up">
+        <!-- Card 1 -->
+        <div class="relative flex flex-col h-full">
+            <div class="flex justify-center z-50">
+                <i class="fas fa-piggy-bank bg-sky-500 text-3xl text-white p-4 rounded-full absolute -top-8"></i>
+            </div>
+            <div
+                class="bg-white shadow-lg shadow-gray-100 -mt-1 px-10 py-14 rounded-xl flex-grow flex flex-col justify-center">
+                <h1 class="font-medium text-2xl text-center text-sky-900">Earn and Save</h1>
+                <p class="text-gray-600 text-center mt-2">Earn interest when you save while using this account for
+                    day-to-day transactions</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative flex flex-col h-full">
+            <div class="flex justify-center z-50">
+                <i class="fa fa-check bg-sky-500 text-3xl text-white p-5 rounded-full absolute -top-8"></i>
+            </div>
+            <div
+                class="bg-blue-100 shadow-lg shadow-gray-100 -mt-1 px-10 py-14 rounded-xl flex-grow flex flex-col justify-center">
+                <h1 class="font-medium text-2xl text-center text-sky-900">Capital Guaranteed</h1>
+                <p class="text-gray-600 text-center mt-2">Know that your deposits will never be at risk of loss</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative flex flex-col h-full">
+            <div class="flex justify-center z-50">
+                <i class="fa fa-universal-access text-4xl bg-sky-500 text-white p-4 rounded-full absolute -top-8"></i>
+            </div>
+            <div
+                class="bg-white shadow-lg shadow-gray-100 -mt-1 px-10 py-14 rounded-xl flex-grow flex flex-col justify-center">
+                <h1 class="font-medium text-2xl text-center text-sky-900">Accessibility</h1>
+                <p class="text-gray-600 text-center mt-2">No notice period is required. Simply withdraw or transfer your
+                    cash anytime.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="relative flex flex-col h-full">
+            <div class="flex justify-center z-50">
+                <i class="fa fa-mobile-alt text-3xl bg-sky-500 text-white py-4 px-5 rounded-full absolute -top-8"></i>
+            </div>
+            <div
+                class="bg-blue-100 shadow-lg shadow-gray-100 -mt-1 px-10 py-14 rounded-xl flex-grow flex flex-col justify-center">
+                <h1 class="font-medium text-2xl text-center text-sky-900">Convenience</h1>
+                <p class="text-gray-600 text-center mt-2">Safe, flexible, and rewarding—start today</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- cta -->
+    <div class="bg-gradient-to-l from-sky-600 to-sky-700 rounded-[20px] md:m-14 m-8 p-10 text-center" data-aos="fade-up">
+        <h1 class="font-bold text-2xl  text-white">Start Growing Your Savings Today!</h1>
+        <p class="text-white ">Open an account in minutes and earn competitive interest—risk-free.</p>
+        <button class="bg-white px-5 py-2 rounded-[14px] mt-5 hover:bg-gray-200 ">Sign Up</button>
+    </div>
+
+
+    <!-- contact -->
+    <div class="grid md:grid-cols-2 bg-gradient-to-l from-white to-gray-50 lg:p-20 p-8 mt-10" data-aos="fade-up">
+        <div class="grid grid-rows-2 md:px-8">
+            <div>
+                <img src="https://img.freepik.com/free-vector/organic-flat-customer-support-illustration_23-2148898933.jpg?t=st=1752664882~exp=1752668482~hmac=7508151052d479a8e2d3dc6c5ff72804c013f9ed7dec6e9a9f64d0a7dd9f32c0&w=826" class="w-100 object-cover rounded-lg" alt="">
+            </div>
+            <div>
+                <h1 class="font-medium text-3xl">Contact</h1>
+            <div class="flex items-center gap-4 mt-4 mb-4">
+                <i class="fa-solid fa-map-marker-alt text-red-600 text-xl"></i>
+                <p class="text-sm text-gray-600">Head Office: 57 Marina, Lagos Island, Lagos, Nigeria.</p>
+            </div>
+            <div class="flex items-center gap-4 mb-4">
+                <i class="fa fa-solid fa-phone text-red-600 text-xl"></i>
+                <p class="text-sm text-gray-600">09023840192</p>
+            </div>
+            <div class="flex items-center gap-4 mb-4">
+                <i class="fa-brands fa-whatsapp text-red-600 text-xl"></i>
+                <p class="text-sm text-gray-600">+234 5780 432 304</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-regular fa-envelope text-red-600 text-xl"></i>
+                <p class="text-sm text-gray-600">example@gmail.com</p>
+            </div>
+        </div>
+            </div>
+        <div class="mt-10 md:mt-0">
+            <h1 class="font-medium text-3xl">Get in Touch</h1>
+            <div class="flex flex-col md:flex-row gap-4 mt-4">
+                <!-- Name Input -->
+                <div class="w-full">
+                    <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name"
+                        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent">
+                </div>
+
+                <!-- Email Input -->
+                <div class="w-full">
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email"
+                        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent">
+                </div>
+            </div>
+            <div class="mt-4">
+                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                <input type="text" name="" id="" placeholder="Subject"
+                    class="border border-gray-300 rounded-md p-2 focus:outline-none focus:border-2 w-full">
+            </div>
+            <div class="mt-4">
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                <textarea name="message" id="" placeholder="Message" rows="4"
+                    class="border border-gray-300 rounded-md p-2 focus:outline-none focus:border-2 w-full"></textarea>
+            </div>
+            <div>
+                <button
+                    class="bg-gradient-to-l from-amber-400 to-amber-300 rounded-lg px-10 py-2 cursor-pointer mt-4 hover:scale-105">Send</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-white text-gray-600 pt-12 pb-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-1">
+                    <img src="assets/img/DH CONSULTS.png" alt="" class="h-10 mb-4">
+                    <p class="text-gray-500 text-sm mb-4">
+                        Empowering your financial journey with innovative solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-facebook-f text-sky-400 hover:text-blue-400"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-sky-400 hover:text-blue-400"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-sky-400 hover:text-blue-400"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-sky-400 hover:text-blue-400"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Services -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><a href="" class="hover:text-blue-500">Savings Accounts</a></li>
+                        <li><a href="" class="hover:text-blue-500">Loans</a></li>
+                        <li><a href="" class="hover:text-blue-500">Solar Products</a></li>
+                        <li><a href="" class="hover:text-blue-500">Electronics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><a href="" class="hover:text-blue-500">About Us</a></li>
+                        <li><a href="" class="hover:text-blue-500">Careers</a></li>
+                        <li><a href="" class="hover:text-blue-500">Blog</a></li>
+                        <li><a href="" class="hover:text-blue-500">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Legal/Contact -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Support</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><a href="" class="hover:text-blue-500">FAQ</a></li>
+                        <li><a href="" class="hover:text-blue-500">Privacy Policy</a></li>
+                        <li><a href="" class="hover:text-blue-500">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="border-t border-gray-400 pt-6">
+                <p class="text-gray-700 text-sm mb-4 md:mb-0">
+                    © 2023 Dinerhive Financial Limited. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            const icon = this.querySelector('i');
+
+            // Toggle menu visibility
+            menu.classList.toggle('hidden');
+
+            // Change icon between bars and times
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdowns = document.querySelectorAll('.group');
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('touchstart', function (e) {
+                    // Prevent immediate click
+                    e.preventDefault();
+                    this.classList.toggle('active');
+
+                    // Close other open dropdowns
+                    dropdowns.forEach(other => {
+                        if (other !== this) other.classList.remove('active');
+                    });
+                }, { passive: false });
+            });
+
+            // Close when tapping elsewhere
+            document.addEventListener('touchstart', function (e) {
+                if (!e.target.closest('.group')) {
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                    });
+                }
+            });
+        });
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>
