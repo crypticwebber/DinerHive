@@ -13,7 +13,7 @@
 
 <body>
     <!-- navbar -->
-    <div class="flex flex-col bg-teal-50 top-0 px-8 py-4">
+    <div class="flex flex-col bg-blue-50 top-0 px-8 py-4">
         <div class="flex items-center justify-between  ">
             <div class="flex-shrink-0">
                 <img src="assets/img/DH CONSULTS.png" class="w-30" alt="">
@@ -47,7 +47,7 @@
             </div>
             <div class="flex gap-4 hidden lg:flex">
                 <button
-                    class="bg-teal-50 border border-emerald-300 px-8 py-2 rounded-lg hover:border-emerald-700 hover:scale-105 "><a
+                    class="bg-blue-50 border border-emerald-300 px-8 py-2 rounded-lg hover:border-emerald-700 hover:scale-105 "><a
                         href="">Sign in</a></button>
                 <button
                     class="bg-gradient-to-l from-emerald-300 to-sky-300 rounded-lg px-8 py-2 hover:bg-gradient-to-l hover:from-emerald-400 hover:to-sky-400 hover:scale-105 "><a
@@ -84,13 +84,13 @@
                         </div>
                     </li>
                     <!-- <li><a href="" class="hover:text-emerald-700">How it works</a></li> -->
-                    <li><a href="index.html#about" class="hover:text-emerald-700">About Us</a></li>
+                    <li><a href="#index.html.about" class="hover:text-emerald-700">About Us</a></li>
                     <li><a href="#contact" class="hover:text-emerald-700">Contact</a></li>
                 </ul>
             </div>
             <div class="flex flex-col mt-4 ">
                 <button
-                    class="bg-teal-50 border border-emerald-300 px-8 py-2 mb-2 rounded-lg hover:border-emerald-700 hover:scale-105 "><a
+                    class="bg-blue-50 border border-emerald-300 px-8 py-2 mb-2 rounded-lg hover:border-emerald-700 hover:scale-105 "><a
                         href="">Sign in</a></button>
                 <button
                     class="bg-gradient-to-l from-emerald-300 to-sky-300 rounded-lg px-8 py-2 hover:bg-gradient-to-l hover:from-emerald-400 hover:to-sky-400 hover:scale-105 "><a
@@ -100,155 +100,244 @@
         </div>
     </div>
 
-
-    <!-- borrow -->
-    <div class="grid md:grid-cols-2 bg-teal-50 lg:p-20 md:p-10 gap-10 -mt-1 md:mt-0">
-        <div class="flex flex-col justify-center px-8 mt-8 md:mt-0 md:p-0" data-aos="zoom-in">
-            <h1 class="font-bold lg:text-[50px]/12 text-3xl ">Finance Your Goals with Flexible Loan Solutions</h1>
-            <p class="lg:text-lg text-sm mt-4 text-gray-700">Whether you're consolidating debt, funding education, or
-                making a major purchase, our competitive rates and personalized repayment plans put your ambitions
-                within reach.
-
+    <!-- register -->
+    <div class="grid md:grid-cols-2 bg-teal-50 lg:p-20 md:p-10 p-6 gap-10">
+        <!-- Text Content -->
+        <div class="flex flex-col justify-center px-4 md:px-8 mt-8 md:mt-0" data-aos="zoom-in">
+            <h1 class="font-bold lg:text-[50px] lg:leading-[60px] text-3xl">Register your Business to grow</h1>
+            <p class="lg:text-lg text-sm mt-4 text-gray-700">
+                Get your CAC registration documents and your Tax Identification Number (TIN) easily through your Kuda
+                Business account.
             </p>
             <button
-                class="bg-teal-500 lg:p-3 md:p-2 p-3 rounded-lg w-50 lg:mt-8 md:mt-4 mt-8 text-lg hover:scale-105 hover:bg-teal-600 text-white">Get
-                Started <i class="fa fa-arrow-right mx-4"></i></button>
+                class="bg-teal-500 lg:py-3 lg:px-6 py-2 px-4 rounded-lg w-fit lg:mt-8 mt-6 text-base lg:text-lg hover:scale-105 hover:bg-teal-600 text-white transition-transform duration-300">
+                Get Started <i class="fa fa-arrow-right ml-2"></i>
+            </button>
         </div>
-        <div data-aos="zoom-in">
-            <img src="https://img.freepik.com/free-photo/smiley-loving-couple-planning-redecorating-home_23-2148814347.jpg?t=st=1752762802~exp=1752766402~hmac=69e925e89870a5479a235720f2039a91bd36d8cda9af4a3d47f5336f22eb0d6e&w=826"
-                class="md:rounded-[30px] " alt="">
+
+        <!-- Image Gallery -->
+        <div class="relative h-[300px] md:h-[400px] lg:h-[500px] w-full" data-aos="zoom-in">
+            <!-- Bottom Image (larger) -->
+            <div
+                class="absolute bottom-0 left-0 w-full h-[80%] rounded-2xl overflow-hidden shadow-md border-4 border-white">
+                <img src="https://img.freepik.com/premium-photo/closeup-businessmans-hands-as-he-is-writing-signing-document-with-cup-coffee-various-business-documents-desk_132358-64996.jpg?w=826"
+                    class="w-full h-full object-cover" alt="Business team meeting" loading="lazy">
+            </div>
+
+            <!-- Top Image (smaller, overlapping) -->
+            <div
+                class="absolute top-0 right-0 w-[70%] h-[60%] rounded-2xl overflow-hidden shadow-xl border-4 border-white z-10">
+                <img src="https://img.freepik.com/free-photo/afro-american-man-suit-holding-documents-talking-female-boss_1098-20604.jpg?t=st=1753873420~exp=1753877020~hmac=5a6bee2d1e8555f52c403e59d8ee14c245eed6dcd9d6196e521070a5d2647c91&w=826"
+                    class="w-full h-full object-cover" alt="Business documents" loading="lazy">
+            </div>
         </div>
     </div>
 
     <!-- benefits -->
-    <div class="p-14 mt-12 font-bold text-3xl text-teal-900 text-center">Benefits Of Our Loans</div>
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 md:p-14 p-8 lg:gap-8 gap-14" data-aos="fade-up">
-        <!-- Card 1 -->
-        <div class="relative flex flex-col h-full">
-            <div class="flex justify-center z-50">
-                <i class="fas fa-piggy-bank bg-teal-500 text-3xl text-white p-4 rounded-full absolute -top-8"></i>
+    <div class="bg-white py-16 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Why Register With Us?</h2>
+                <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">
+                    Get your business legally established with these exclusive benefits
+                </p>
             </div>
-            <div
-                class="bg-white shadow-lg shadow-gray-100 -mt-1 px-10 py-14 rounded-xl flex-grow flex flex-col justify-center">
-                <h1 class="font-medium text-2xl text-center text-teal-900">Secure</h1>
-                <p class="text-gray-600 text-center mt-2">Reliable loans with reliable repayment terms</p>
+
+            <!-- Benefits Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div
+                    class="bg-teal-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border-l-4 border-teal-500">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fast Processing</h3>
+                    <p class="text-gray-600">Get your CAC certificate in as little as 24 hours with our expedited
+                        service.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div
+                    class="bg-teal-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border-l-4 border-teal-500">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dedicated Support</h3>
+                    <p class="text-gray-600">Our business registration experts guide you through every step of the
+                        process.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div
+                    class="bg-teal-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border-l-4 border-teal-500">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-file-invoice-dollar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">All-Inclusive</h3>
+                    <p class="text-gray-600">CAC registration, TIN, and business bank account setup in one package.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div
+                    class="bg-teal-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border-l-4 border-teal-500">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Legal Compliance</h3>
+                    <p class="text-gray-600">Ensure your business meets all regulatory requirements from day one.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-16 text-center">
+                <a href="#"
+                    class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 transition-colors shadow-sm">
+                    Start Your Registration
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
         </div>
+    </div>
 
-        <!-- Card 2 -->
-        <div class="relative flex flex-col h-full">
-            <div class="flex justify-center z-50">
-                <i class="fa fa-check bg-teal-500 text-3xl text-white p-5 rounded-full absolute -top-8"></i>
+    <!-- packages -->
+    <div class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Business Registration Packages</h2>
+                <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Choose the perfect registration option for your business needs
+                </p>
             </div>
-            <div
-                class="bg-teal-100 shadow-lg shadow-gray-100 -mt-1 px-10 py-14 rounded-xl flex-grow flex flex-col justify-center">
-                <h1 class="font-medium text-2xl text-center text-teal-900">Simple</h1>
-                <p class="text-gray-600 text-center mt-2">Select the loan that best suits you, apply and get your loan
-                    amount paid straight into your account</p>
-            </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="relative flex flex-col h-full">
-            <div class="flex justify-center z-50">
-                <i class="fa fa-universal-access text-4xl bg-teal-500 text-white p-4 rounded-full absolute -top-8"></i>
-            </div>
-            <div
-                class="bg-white shadow-lg shadow-gray-100 -mt-1 px-10 py-14 rounded-xl flex-grow flex flex-col justify-center">
-                <h1 class="font-medium text-2xl text-center text-teal-900">Flexible</h1>
-                <p class="text-gray-600 text-center mt-2">Choose the repayment terms that suit you best</p>
-            </div>
-        </div>
+            <!-- Pricing Cards -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Business Name Registration -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-all">
+                    <div class="bg-teal-600 px-6 py-4">
+                        <h3 class="text-xl font-bold text-white">Business Name Registration</h3>
+                        <p class="text-teal-100">Ideal for sole proprietors and small businesses</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-4xl font-extrabold">₦35,000</span>
+                            <!-- <span class="ml-1 text-gray-500">+ ₦500 stamp duty</span> -->
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                <span>Valid for lifetime (no renewal)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                <span>CAC certificate included</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                <span>Business name search & reservation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                <span>Tax ID (TIN) registration</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-6 mt-8 rounded-lg transition-colors">
+                            Register Business Name
+                        </button>
+                    </div>
+                </div>
 
-        <!-- Card 4 -->
-        <div class="relative flex flex-col h-full">
-            <div class="flex justify-center z-50">
-                <i class="fa fa-mobile-alt text-3xl bg-teal-500 text-white py-4 px-5 rounded-full absolute -top-8"></i>
+                <!-- Company Registration -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-all">
+                    <div class="bg-sky-900 px-6 py-4">
+                        <h3 class="text-xl font-bold text-white">Company Registration (LTD/LLC)</h3>
+                        <p class="text-blue-100">For limited liability companies and partnerships</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-4xl font-extrabold">₦60,000</span>
+                            <span class="ml-1 text-gray-500">+ ₦1,000 stamp duty</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Valid for lifetime (no renewal)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>CAC certificate & memorandum</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Corporate Tax ID (TIN)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Legal documents drafting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>2 free director forms</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-sky-900 hover:bg-blue-900 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+                            Register Your Company
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div
-                class="bg-teal-100 shadow-lg shadow-gray-100 -mt-1 px-10 py-14 rounded-xl flex-grow flex flex-col justify-center">
-                <h1 class="font-medium text-2xl text-center text-teal-900">Affordable</h1>
-                <p class="text-gray-600 text-center mt-2">Competitive interest rates</p>
+
+            <!-- Additional Info -->
+            <div class="mt-12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+                <div class="flex">
+                    <div class="flex-shrink-0 text-yellow-500">
+                        <i class="fas fa-info-circle text-xl"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm text-yellow-700">
+                            <span class="font-bold">Note:</span> Prices include all CAC fees. Additional services like
+                            registered address or secretary may incur extra charges.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <div class="max-w-7xl mx-auto px-6 py-16" data-aos="fade-up">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Find the Perfect Loan for Your Needs</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Find the best plan that suits your needs
-            </p>
-        </div>
-
-        <!-- Loan Finder Cards -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Card 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-blue-500">
-                <div class="text-blue-500 mb-4">
-                    <i class="fas fa-home text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Home Loans</h3>
-                <p class="text-gray-600 mb-4">Buy, build, or renovate with competitive mortgage rates.</p>
-                <a href="#" class="text-blue-600 font-medium inline-flex items-center">
-                    Explore <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </a>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-green-500">
-                <div class="text-green-500 mb-4">
-                    <i class="fas fa-car text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Auto Loans</h3>
-                <p class="text-gray-600 mb-4">Drive away with your dream car at affordable payments.</p>
-                <a href="#" class="text-green-600 font-medium inline-flex items-center">
-                    Explore <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-purple-500">
-                <div class="text-purple-500 mb-4">
-                    <i class="fas fa-graduation-cap text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Education Loans</h3>
-                <p class="text-gray-600 mb-4">Invest in your future with flexible student financing.</p>
-                <a href="#" class="text-purple-600 font-medium inline-flex items-center">
-                    Explore <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-orange-500">
-                <div class="text-orange-500 mb-4">
-                    <i class="fas fa-credit-card text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Personal Loans</h3>
-                <p class="text-gray-600 mb-4">Cover unexpected expenses or consolidate debt.</p>
-                <a href="#" class="text-orange-600 font-medium inline-flex items-center">
-                    Explore <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </a>
-            </div>
-        </div>
-
+    <!-- pos -->
+    <!-- <div>
+        <h1 class="text-center font-bold md:text-4xl text-2xl mb-10 mt-20">More for you</h1>
     </div>
-
+    <div class="grid md:grid-cols-2 bg-teal-950 ">
+        <div class="lg:p-30 text-center md:text-start p-10 md:p-15 " data-aos="zoom-in">
+            <h1 class="text-white lg:text-6xl text-2xl font-bold">Accept Every Payment Method with One Device</h1>
+            <p class="lg:text-xl text-white mt-8">Cards, transfers, USSD, or cash—our POS solutions ensure you never miss a sale from any customer.</p>
+            <h1 class="text-amber-300 lg:text-3xl text-xl font-bold mt-10">Make your Business Forward, Get a POS machine</h1>
+            <p class="lg:text-lg text-white mt-8">Our POS systems help retailers process transactions 3x faster while automatically updating stock levels and sales reports.</p>
+            <button class="bg-amber-300 rounded-lg px-3 py-2 font-medium text-lg mt-10 hover:bg-amber-400">Request a Terminal</button>
+        </div>
+        <div class="lg:px-20 px-10" data-aos="zoom-in">
+            <img src="https://nomba.com/static/c3d08be13dcf10b825f3a157073ae5d1/6ff00/Nomba-Max-Front.webp" class="" alt="">
+        </div>
+    </div> -->
 
     <!-- cta -->
-    <div class="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-[20px] md:m-14 m-8 p-10 text-center"
+    <div class="bg-gradient-to-l from-sky-600 to-teal-600 rounded-[20px] md:m-14 m-8 p-10 text-center"
         data-aos="zoom-in">
-        <h1 class="font-bold text-2xl  text-white">Fast Funding When You Need It Most!</h1>
-        <p class="text-white ">Get the funds you need with transparent terms and rates tailored to your financial
-            situation.</p>
-        <button class="bg-white px-5 py-2 rounded-[14px] mt-5 hover:bg-gray-200 ">Sign Up</button>
+        <h1 class="font-bold text-2xl  text-white">Registering of business just got earsier</h1>
+        <p class="text-white ">Boost your sales, track inventory effortlessly, and accept all payment types—from cards to transfers—with our reliable POS systems designed for Nigerian businesses.</p>
+        <button class="bg-white px-5 py-2 rounded-[14px] mt-5 hover:bg-gray-200 ">Register Now</button>
     </div>
 
 
     <!-- contact -->
-    <div class="grid md:grid-cols-2 bg-gradient-to-l from-white to-gray-50 lg:p-20 p-8 mt-10" id="contact" data-aos="fade-up">
+    <div id="contact" class="grid md:grid-cols-2 bg-gradient-to-l from-white to-gray-50 lg:p-20 p-8 mt-10" data-aos="fade-up">
         <div class="grid grid-rows-2 md:px-8">
             <div>
                 <img src="https://img.freepik.com/free-vector/organic-flat-customer-support-illustration_23-2148898933.jpg?t=st=1752664882~exp=1752668482~hmac=7508151052d479a8e2d3dc6c5ff72804c013f9ed7dec6e9a9f64d0a7dd9f32c0&w=826"
@@ -415,7 +504,6 @@
             });
         });
     </script>
-
 
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
